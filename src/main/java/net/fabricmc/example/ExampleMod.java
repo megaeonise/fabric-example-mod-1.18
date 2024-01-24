@@ -2,6 +2,7 @@ package net.fabricmc.example;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.example.item.CustomGroup;
+import net.fabricmc.example.item.MegaToolMaterial;
 import net.fabricmc.example.item.MegaWeapon;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
@@ -9,6 +10,9 @@ import net.minecraft.util.registry.Registry;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 
 public class ExampleMod implements ModInitializer {
@@ -19,6 +23,8 @@ public class ExampleMod implements ModInitializer {
 	//Monado instance
 	public static final MegaWeapon MONADO = 
 	  Registry.register(Registry.ITEM, new Identifier("modid", "monado"), new MegaWeapon(new FabricItemSettings().group(CustomGroup.MEGAWEAPONS)));
+	
+	public static ToolItem MONADO_SWORD = new SwordItem(MegaToolMaterial.INSTANCE, 10, -2.0F, new FabricItemSettings().group(CustomGroup.MEGAWEAPONS));
 
 	@Override
 	public void onInitialize() {
