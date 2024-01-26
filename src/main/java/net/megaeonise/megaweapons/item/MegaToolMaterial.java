@@ -1,4 +1,4 @@
-package net.fabricmc.example.item;
+package net.megaeonise.megaweapons.item;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

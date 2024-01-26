@@ -1,8 +1,8 @@
-package net.fabricmc.example.item;
+package net.megaeonise.megaweapons.item;
 
+import net.megaeonise.megaweapons.item.MegaToolMaterial;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
-import net.fabricmc.example.item.MegaToolMaterial;
 
 public class MegaSword extends SwordItem{
     public MegaSword(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {

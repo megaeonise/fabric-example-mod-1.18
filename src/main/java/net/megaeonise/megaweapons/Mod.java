@@ -1,11 +1,10 @@
-package net.fabricmc.example;
+package net.megaeonise.megaweapons;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.example.item.CustomGroup;
-import net.fabricmc.example.item.MegaToolMaterial;
-import net.fabricmc.example.item.MegaWeapon;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-
+import net.megaeonise.megaweapons.item.CustomGroup;
+import net.megaeonise.megaweapons.item.MegaToolMaterial;
+import net.megaeonise.megaweapons.item.MegaWeapon;
 import net.minecraft.util.registry.Registry;
 
 import org.slf4j.Logger;
@@ -15,16 +14,16 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 
-public class ExampleMod implements ModInitializer {
+public class Mod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+	public static final Logger LOGGER = LoggerFactory.getLogger("megaweapons");
 	//Monado instance
 	public static final MegaWeapon MONADO = 
-	  Registry.register(Registry.ITEM, new Identifier("modid", "monado"), new MegaWeapon(new FabricItemSettings().group(CustomGroup.MEGAWEAPONS)));
+	  Registry.register(Registry.ITEM, new Identifier("megaweapons", "monado"), new MegaWeapon(new FabricItemSettings().group(CustomGroup.MEGAWEAPONS)));
 	
-	public static ToolItem MONADO_SWORD = new SwordItem(MegaToolMaterial.INSTANCE, 10, -2.0F, new FabricItemSettings().group(CustomGroup.MEGAWEAPONS));
+	// public static ToolItem MONADO_SWORD = new SwordItem(MegaToolMaterial.INSTANCE, 10, -2.0F, new FabricItemSettings().group(CustomGroup.MEGAWEAPONS));
 
 	@Override
 	public void onInitialize() {

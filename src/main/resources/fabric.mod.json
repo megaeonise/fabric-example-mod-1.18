@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "megaweapons",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "MegaWeapons",
+  "description": "Some weapons added by megaeonise",
   "authors": [
-    "Me!"
+    "megaeonise"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,16 +14,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/megaweapons/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.megaeonise.megaweapons.Mod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "megaweapons.mixins.json"
   ],
 
   "depends": {
