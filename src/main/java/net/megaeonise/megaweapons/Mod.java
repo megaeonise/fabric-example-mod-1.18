@@ -20,10 +20,9 @@ public class Mod implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("megaweapons");
 	//Monado instance
-	public static final MegaWeapon MONADO = 
-	  Registry.register(Registry.ITEM, new Identifier("megaweapons", "monado"), new MegaWeapon(new FabricItemSettings().group(CustomGroup.MEGAWEAPONS)));
+	public static final ToolItem MONADO = Registry.register(Registry.ITEM, new Identifier("megaweapons", "monado"),
+	  new SwordItem(MegaToolMaterial.INSTANCE, 11, -3.2F, new FabricItemSettings().group(CustomGroup.MEGAWEAPONS)));
 	
-	// public static ToolItem MONADO_SWORD = new SwordItem(MegaToolMaterial.INSTANCE, 10, -2.0F, new FabricItemSettings().group(CustomGroup.MEGAWEAPONS));
 
 	@Override
 	public void onInitialize() {

@@ -1,6 +1,5 @@
 package net.megaeonise.megaweapons.item;
 
-import net.megaeonise.megaweapons.item.MegaToolMaterial;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 

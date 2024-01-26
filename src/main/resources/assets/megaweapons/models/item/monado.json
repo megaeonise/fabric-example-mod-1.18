@@ -1,6 +1,13 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "megaweapons:item/monado"
-    }
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "megaweapons:item/monado"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-2.5, 88.5, 56],
+			"translation": [0, 5.5, 2]
+		}
+	}
 }
