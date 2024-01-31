@@ -19,7 +19,7 @@ public class MegaToolMaterial implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 8.0f;
+        return 0f;
     }
 
     @Override

@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.megaeonise.megaweapons.Mod"
+    ],
+    "client": [
+      "net.megaeonise.megaweapons.util.MegaWeaponsClient"
     ]
   },
   "mixins": [

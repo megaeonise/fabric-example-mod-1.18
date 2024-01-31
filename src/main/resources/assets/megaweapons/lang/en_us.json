@@ -1,3 +1,5 @@
 {
-    "item.megaweapons.monado": "Monado"
+    "item.megaweapons.monado": "Monado",
+    "category.megaweapons.megaweapons": "MegaWeapons Keybinds",
+    "key.megaweapons.weaponmenu": "Weapon Menu"
 }
